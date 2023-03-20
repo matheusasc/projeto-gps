@@ -4,21 +4,20 @@ import {HomeComponent} from "./home/home.component";
 import {DetalhesComponent} from "./detalhes/detalhes.component";
 
 const routes: Routes = [
-
   {
     path:'',
-    children:[
-      {
-        path:'Home',
-        title:'Home',
-        component: HomeComponent,
-      },
-      {
-        path:'Detalhes',
-        title:'Detalhes',
-        component: DetalhesComponent,
-      }
-    ]
+    redirectTo: 'Home',
+    pathMatch: 'full'
+  },
+  {
+    path:'Home',
+    title:'Home',
+    component: HomeComponent,
+  },
+  {
+    path:'Detalhes',
+    title:'Detalhes',
+    component: DetalhesComponent,
   }
 ];
 
