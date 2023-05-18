@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit{
         image: 'https://cdn-hweb.hsystem.com.br/5873d325c19a4207cc40b87c/8551c7cb9ffa4963855c752b712f2edc.jpg',
         thumbImage: 'https://cdn-hweb.hsystem.com.br/5873d325c19a4207cc40b87c/8551c7cb9ffa4963855c752b712f2edc.jpg',
         alt: 'Image 1',
-        title: 'Image 1'
+        title: 'Passeio na Praia da Lua'
       }, {
         image: 'https://hoteldezdejulho.manaus.br/wp-content/uploads/2019/04/WhatsApp-Image-2018-10-10-at-09.11.52-1024x682.jpeg',
         thumbImage: 'https://hoteldezdejulho.manaus.br/wp-content/uploads/2019/04/WhatsApp-Image-2018-10-10-at-09.11.52-1024x682.jpeg',
