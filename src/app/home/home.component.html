@@ -1,4 +1,117 @@
+<div class="container text-center">
+  <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
+
+    <div class="col">
+      <button type="button" class="btn" style="margin-top: 25px; font-size: 14px; background-color: #B2FF9F; color: black;"><strong> Passeios de Barco </strong></button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn" style="margin-top: 25px; font-size: 14px; background-color: #B2FF9F; color: black;"><strong> Trilhas na Mata </strong></button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn" style="margin-top: 25px; font-size: 14px; background-color: #B2FF9F; color: black;"><strong> Passeios na Cidade </strong></button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn" style="margin-top: 25px; font-size: 14px; white-space: nowrap; margin-left: 20px; background-color: #B2FF9F; color: black;"><strong> Visitas às Comunidades </strong></button>
+    </div>
+    <div class="col">
+      <button type="button" class="btn" style="margin-top: 25px; font-size: 14px; white-space: nowrap; margin-left: 50px; background-color: #B2FF9F; color: black;"><strong> Passeio de Meio-dia </strong></button>
+    </div>
+    <div class="col">
+      <!--<div class="p-3">Row column</div>-->
+      <button type="button" class="btn" style="margin-top: 25px; font-size: 14px; background-color: #B2FF9F; color: black;"><strong> Mais </strong></button>
+    </div>
+   
+  </div>
+</div>
+
 <section>
+
+  <div class="py-3">
+      <span style="font-size: 30px;">O QUE FAZER NO AMAZONAS?</span>
+      <span style="font-size: 25px; margin-left: 540px;">Artigos de Hoje</span>
+  </div>
+
+  <!--  //Inicio do carrossel-->
+  <div class="py-3">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!--      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">-->
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="https://turismo.eurodicas.com.br/wp-content/uploads/2018/12/fotos-da-torre-de-paris-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="background-color: rgba(198, 148, 255, 0.5);">
+            <h5>Encontro das Águas</h5>
+            <p>RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA .</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075_1280.jpg"class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="background-color: rgba(198, 148, 255, 0.5);">
+            <h5>Encontro das Águas</h5>
+            <p>RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA .</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="https://i0.wp.com/hotbook.mx/wp-content/uploads/2019/01/fotosparis_portada.jpg?fit=1024%2C682&ssl=1" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="background-color: rgba(198, 148, 255, 0.5)">
+            <h5>Encontro das Águas</h5>
+            <p>RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA .</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="py-3">
+    <span style="font-size: 30px;">AS MELHORES!</span>
+</div>
+
+  <div>
+    <ng-image-slider [images]="imgCollection.slice(currentImageIndex, currentImageIndex + maxImages)" 
+    [imageSize]="{ width: 380, height: 300 }" #nav></ng-image-slider>
+    <button (click)="onNextButtonClick()">Próximo</button>
+  </div>
+
+    <div class="row pb-3" style="background-color: #8BE28A;">
+      <div class="col-md-6" style="margin-top: 30px;">
+        <h2>Passeio na Encontro das Águas</h2>
+        <p>Agência: Turismo Coroado LTDA</p>
+        <p class="text-justify">O encontro das Águas é um dos lugares mais impressionantes para visitar durante sua viagem ao norte do país. É um fenômeno natural que ocorre na confluência dos rios Negro e Solimões, próximo à cidade de Manaus. Os rios correm lado a lado por alguns quilômetros, sem se misturar, criando uma imagem incrível de dois rios de cores diferentes.</p>
+        <div class="row">
+          <div class="col-md-6">
+            <button type="button" class="btn fs-5 m-2 text-white" style="background-color: #4791E9;"><strong> Venha conferir </strong></button>
+          
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center">
+              <h2 class="d-inline" style="font-size: 20px; white-space: nowrap; margin-top: 10px;">Pacotes a partir de R$ 500,00!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 my-2">
+        <div>
+          <img src="https://cdn-hweb.hsystem.com.br/5873d325c19a4207cc40b87c/8551c7cb9ffa4963855c752b712f2edc.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+
+  <!--  </div>-->
+  <!--  //Fim do carrossel-->
+
   <div class="py-3">
     <div class="text-center">
       <span>Melhores Atrações</span>
@@ -206,59 +319,8 @@
           </div>
         </div>
       </div>
+      
     </div>
   </div>
-
-  <div class="py-3">
-    <div class="text-center">
-      <span>O que fazer em Manaus?</span>
-    </div>
-  </div>
-
-  <!--  //Inicio do carrossel-->
-  <div class="py-3">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-
-      <!--      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">-->
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="3000">
-          <img src="https://turismo.eurodicas.com.br/wp-content/uploads/2018/12/fotos-da-torre-de-paris-1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Encontro das Águas</h5>
-            <p>RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA .</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075_1280.jpg"class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Encontro das Águas</h5>
-            <p>RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA .</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-interval="3000">
-          <img src="https://i0.wp.com/hotbook.mx/wp-content/uploads/2019/01/fotosparis_portada.jpg?fit=1024%2C682&ssl=1" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Encontro das Águas</h5>
-            <p>RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA RESUMO DA MATÉRIA .</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <!--  </div>-->
-  <!--  //Fim do carrossel-->
 
 </section>
