@@ -3,10 +3,11 @@
   width: 100%;
 }
 
-.carousel-inner img {
- object-fit: cover;
-  height: 400px
-}
+//.carousel-inner img {
+// object-fit: cover;
+//  height: 400px;
+//  width: 900px;
+//}
 
 .card-body{
   text-align: center;
@@ -14,7 +15,7 @@
 
 .containerGutter{
   background-color: #B2FF9F;
-} 
+}
 
 .col1{
   border-radius: 20px;
@@ -44,5 +45,9 @@
 .img-bg{
   width: 100%;
   background-image: url('/assets/img/backGround.png');
+}
+
+.carousel-caption {
+  background-color: rgba(198, 148, 255, 0.5);
 }
 
